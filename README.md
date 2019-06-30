@@ -35,11 +35,14 @@ sudo ldconfig
 Go to test folder and launch the test.py file:
 ```
 cd OpenCV_4_Raspberry_PI/test
+sudo pip2 install imutils
 python2 test.py
 ```
 
 Or for Python 3:
 ```
+cd OpenCV_4_Raspberry_PI/test
+sudo pip3 install imutils
 python3 test.py
 ```
 
