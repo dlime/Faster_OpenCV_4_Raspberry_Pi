@@ -1,19 +1,23 @@
 # OpenCV 4.1.0 for Raspberry Pi
-* A pre-compiled **OpenCV 4.1.0** for **Raspberry PI**, optimized for deep learning (**NEON** and **VFPV3** turned on). 
+* A pre-compiled **OpenCV 4.1.0** for **Raspberry Pi**, optimized for deep learning (**NEON**, **VFPV3**, **TBB** turned on).
 * Bindings for **Python2** and **Python3** are also included.
 * Created with OpenCV cpack targets
-* Tested on **Raspberry Pi 3+** on **Raspbian Stretch**
+* Tested on **Raspberry Pi 3+** using **Raspbian Stretch (Debian 9)**
 
 # Prerequisites
-Before proceeding, install the OpenCV library prerequisites.
+Before proceeding, install OpenCV library prerequisites.
 ```
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install -y libtiff5-dev libjasper-dev libpng12-dev libjpeg-dev \
-libavcodec-dev libavformat-dev libswscale-dev \
-libv4l-dev libgtk2.0-dev libatlas-base-dev gfortran
+sudo apt-get install -y
+	libjpeg-dev libpng-dev libtiff-dev \
+	libavcodec-dev libavformat-dev libswscale-dev libv4l-dev \
+	libxvidcore-dev libx264-dev libjasper1 libjasper-dev \
+	libgtk-3-dev \
+	libatlas-base-dev gfortran \
+	libeigen3-dev libtbb-dev
 ```
 
-Install numpy based on your Python version:
+Install **numpy** based on your target Python version:
 ```
 sudo apt-get install -y python3-dev python3-numpy
 ```
@@ -46,5 +50,7 @@ sudo pip3 install imutils
 python3 test.py
 ```
 
-# Future development
-* Include TBB
+# How to uninstall
+```
+sudo apt purge opencv-*
+```

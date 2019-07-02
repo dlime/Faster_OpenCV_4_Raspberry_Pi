@@ -26,8 +26,8 @@ General configuration for OpenCV 4.1.0 =====================================
     C Compiler:                  /usr/bin/cc
     C flags (Release):           -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -mfp16-format=ieee -fvisibility=hidden -O3 -DNDEBUG  -DNDEBUG
     C flags (Debug):             -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -mfp16-format=ieee -fvisibility=hidden -g  -O0 -DDEBUG -D_DEBUG
-    Linker flags (Release):      -Wl,--gc-sections  
-    Linker flags (Debug):        -Wl,--gc-sections  
+    Linker flags (Release):      -Wl,--gc-sections
+    Linker flags (Debug):        -Wl,--gc-sections
     ccache:                      YES
     Precompiled headers:         NO
     Extra dependencies:          dl m pthread rt
@@ -42,13 +42,13 @@ General configuration for OpenCV 4.1.0 =====================================
     Documentation:               NO
     Non-free algorithms:         YES
 
-  GUI: 
+  GUI:
     GTK+:                        YES (ver 3.22.11)
       GThread :                  YES (ver 2.50.3)
       GtkGlExt:                  NO
     VTK support:                 NO
 
-  Media I/O: 
+  Media I/O:
     ZLib:                        /usr/lib/arm-linux-gnueabihf/libz.so (ver 1.2.8)
     JPEG:                        /usr/lib/arm-linux-gnueabihf/libjpeg.so (ver 62)
     WEBP:                        build (ver encoder: 0x020e)
@@ -72,13 +72,13 @@ General configuration for OpenCV 4.1.0 =====================================
     GStreamer:                   NO
     v4l/v4l2:                    YES (linux/videodev2.h)
 
-  Parallel framework:            pthreads
+  Parallel framework:            TBB (ver 4.3 interface 8006)
 
   Trace:                         YES (built-in)
 
   Other third-party libraries:
     Lapack:                      NO
-    Eigen:                       NO
+    Eigen:                       YES (ver 3.3.2)
     Custom HAL:                  YES (carotene (ver 0.0.1))
     Protobuf:                    build (3.5.1)
 
@@ -100,7 +100,7 @@ General configuration for OpenCV 4.1.0 =====================================
 
   Python (for build):            /usr/bin/python2.7
 
-  Java:                          
+  Java:
     ant:                         NO
     JNI:                         NO
     Java wrappers:               NO
@@ -108,4 +108,3 @@ General configuration for OpenCV 4.1.0 =====================================
 
   Install to:                    /usr/local
 -----------------------------------------------------------------
-
