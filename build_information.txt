@@ -6,11 +6,11 @@ General configuration for OpenCV 4.1.0 =====================================
     Version control (extra):     unknown
 
   Platform:
-    Timestamp:                   2019-06-29T23:05:52Z
-    Host:                        Linux 4.19.42-v7+ armv7l
-    CMake:                       3.7.2
-    CMake generator:             Unix Makefiles
-    CMake build tool:            /usr/bin/make
+    Timestamp:                   2019-07-02T18:18:19Z
+    Host:                        Linux 4.19.50-v7+ armv7l
+    CMake:                       3.13.4
+    CMake generator:             Ninja
+    CMake build tool:            /usr/bin/ninja
     Configuration:               Release
 
   CPU/HW features:
@@ -20,12 +20,12 @@ General configuration for OpenCV 4.1.0 =====================================
 
   C/C++:
     Built as dynamic libs?:      YES
-    C++ Compiler:                /usr/bin/c++  (ver 6.3.0)
-    C++ flags (Release):         -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -mfp16-format=ieee -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
-    C++ flags (Debug):           -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -mfp16-format=ieee -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
+    C++ Compiler:                /usr/bin/c++  (ver 8.3.0)
+    C++ flags (Release):         -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -mfp16-format=ieee -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
+    C++ flags (Debug):           -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -mfp16-format=ieee -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
     C Compiler:                  /usr/bin/cc
-    C flags (Release):           -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -mfp16-format=ieee -fvisibility=hidden -O3 -DNDEBUG  -DNDEBUG
-    C flags (Debug):             -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -mfp16-format=ieee -fvisibility=hidden -g  -O0 -DDEBUG -D_DEBUG
+    C flags (Release):           -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -mfp16-format=ieee -fvisibility=hidden -O3 -DNDEBUG  -DNDEBUG
+    C flags (Debug):             -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -mfp16-format=ieee -fvisibility=hidden -g  -O0 -DDEBUG -D_DEBUG
     Linker flags (Release):      -Wl,--gc-sections
     Linker flags (Debug):        -Wl,--gc-sections
     ccache:                      YES
@@ -43,17 +43,17 @@ General configuration for OpenCV 4.1.0 =====================================
     Non-free algorithms:         YES
 
   GUI:
-    GTK+:                        YES (ver 3.22.11)
-      GThread :                  YES (ver 2.50.3)
+    GTK+:                        YES (ver 3.24.5)
+      GThread :                  YES (ver 2.58.3)
       GtkGlExt:                  NO
     VTK support:                 NO
 
   Media I/O:
-    ZLib:                        /usr/lib/arm-linux-gnueabihf/libz.so (ver 1.2.8)
+    ZLib:                        /usr/lib/arm-linux-gnueabihf/libz.so (ver 1.2.11)
     JPEG:                        /usr/lib/arm-linux-gnueabihf/libjpeg.so (ver 62)
     WEBP:                        build (ver encoder: 0x020e)
-    PNG:                         /usr/lib/arm-linux-gnueabihf/libpng.so (ver 1.6.28)
-    TIFF:                        /usr/lib/arm-linux-gnueabihf/libtiff.so (ver 42 / 4.0.8)
+    PNG:                         /usr/lib/arm-linux-gnueabihf/libpng.so (ver 1.6.36)
+    TIFF:                        /usr/lib/arm-linux-gnueabihf/libtiff.so (ver 42 / 4.0.10)
     JPEG 2000:                   /usr/lib/arm-linux-gnueabihf/libjasper.so (ver 1.900.1)
     OpenEXR:                     build (ver 1.7.1)
     HDR:                         YES
@@ -64,21 +64,21 @@ General configuration for OpenCV 4.1.0 =====================================
   Video I/O:
     DC1394:                      NO
     FFMPEG:                      YES
-      avcodec:                   YES (57.64.101)
-      avformat:                  YES (57.56.101)
-      avutil:                    YES (55.34.101)
-      swscale:                   YES (4.2.100)
+      avcodec:                   YES (58.35.100)
+      avformat:                  YES (58.20.100)
+      avutil:                    YES (56.22.100)
+      swscale:                   YES (5.3.100)
       avresample:                NO
     GStreamer:                   NO
     v4l/v4l2:                    YES (linux/videodev2.h)
 
-  Parallel framework:            TBB (ver 4.3 interface 8006)
+  Parallel framework:            TBB (ver 2018.0 interface 10006)
 
   Trace:                         YES (built-in)
 
   Other third-party libraries:
     Lapack:                      NO
-    Eigen:                       YES (ver 3.3.2)
+    Eigen:                       YES (ver 3.3.7)
     Custom HAL:                  YES (carotene (ver 0.0.1))
     Protobuf:                    build (3.5.1)
 
@@ -87,16 +87,16 @@ General configuration for OpenCV 4.1.0 =====================================
     Link libraries:              Dynamic load
 
   Python 2:
-    Interpreter:                 /usr/bin/python2.7 (ver 2.7.13)
-    Libraries:                   /usr/lib/arm-linux-gnueabihf/libpython2.7.so (ver 2.7.13)
-    numpy:                       /usr/lib/python2.7/dist-packages/numpy/core/include (ver 1.12.1)
+    Interpreter:                 /usr/bin/python2.7 (ver 2.7.16)
+    Libraries:                   /usr/lib/arm-linux-gnueabihf/libpython2.7.so (ver 2.7.16)
+    numpy:                       /usr/lib/python2.7/dist-packages/numpy/core/include (ver 1.16.2)
     install path:                lib/python2.7/dist-packages/cv2/python-2.7
 
   Python 3:
-    Interpreter:                 /usr/bin/python3 (ver 3.5.3)
-    Libraries:                   /usr/lib/arm-linux-gnueabihf/libpython3.5m.so (ver 3.5.3)
-    numpy:                       /usr/lib/python3/dist-packages/numpy/core/include (ver 1.12.1)
-    install path:                lib/python3.5/dist-packages/cv2/python-3.5
+    Interpreter:                 /usr/bin/python3 (ver 3.7.3)
+    Libraries:                   /usr/lib/arm-linux-gnueabihf/libpython3.7m.so (ver 3.7.3)
+    numpy:                       /usr/lib/python3/dist-packages/numpy/core/include (ver 1.16.2)
+    install path:                lib/python3.7/dist-packages/cv2/python-3.7
 
   Python (for build):            /usr/bin/python2.7
 
