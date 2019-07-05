@@ -12,7 +12,7 @@ CURRENT_OPENCV_BUILD_VERSION = [4, 1, 0]
 def check_build_info():
     success = True
 
-    print("OpenCV Version:")
+    print("OpenCV Version: {}".format(cv2.__version__))
     if (cv2.getVersionMajor() != CURRENT_OPENCV_BUILD_VERSION[0]) and (
             cv2.getVersionMinor() != CURRENT_OPENCV_BUILD_VERSION[1]) and (
             cv2.getVersionRevision() != CURRENT_OPENCV_BUILD_VERSION[2]):
