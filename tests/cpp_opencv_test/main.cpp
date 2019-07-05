@@ -38,7 +38,7 @@ check_build_info( )
 
     std::cout << "Cpu NEON support: " << cv::checkHardwareSupport( CV_CPU_NEON ) << std::endl;
     if ( cv::checkHardwareSupport( CV_CPU_NEON ) == 0 ) {
-        std::cout << "ERROR: TBB is not enabled." << std::endl;
+        std::cout << "ERROR: NEON is not enabled." << std::endl;
         error_found = true;
     }
 
@@ -48,18 +48,17 @@ check_build_info( )
 int
 main( )
 {
-    bool build_version_ok = check_build_info( );
-    if ( build_version_ok ) {
+    if ( !check_build_info( ) ) {
         std::cout << "SUCCESS: You are using latest OpenCV version, with NEON/TBB support enabled." << std::endl;
     } else {
         std::cout << "FAIL: You are using OpenCV without NEON/TBB support enabled." << std::endl;
-        return -1;
+        return 1;
     }
 
     auto image = cv::imread( IMAGE );
     if ( !image.data ) {
         std::cout << "ERROR: Could not open or find the image" << std::endl;
-        return -1;
+        return 1;
     }
 
     cv::Mat gray_image, thresholded_image;
