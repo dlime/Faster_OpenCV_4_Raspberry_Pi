@@ -6,7 +6,7 @@ from __future__ import print_function
 import cv2
 import sys
 
-CURRENT_OPENCV_BUILD_VERSION = [4, 1, 1]
+CURRENT_OPENCV_BUILD_VERSION = [4, 2, 0]
 
 
 def check_build_info():

@@ -11,8 +11,8 @@
 namespace
 {
 const int         CURRENT_OPENCV_BUILD_MAJOR{ 4 };
-const int         CURRENT_OPENCV_BUILD_MINOR{ 1 };
-const int         CURRENT_OPENCV_BUILD_REVISION = { 1 };
+const int         CURRENT_OPENCV_BUILD_MINOR{ 2 };
+const int         CURRENT_OPENCV_BUILD_REVISION = { 0 };
 const std::string IMAGE{ "tetris_blocks.png" };
 }
 
@@ -51,7 +51,7 @@ main( )
     if ( !check_build_info( ) ) {
         std::cout << "SUCCESS: You are using latest OpenCV version, with NEON/TBB support enabled." << std::endl;
     } else {
-        std::cout << "FAIL: You are using OpenCV without NEON/TBB support enabled." << std::endl;
+        std::cout << "FAIL: You are using wrong OpenCV version or without NEON/TBB support enabled." << std::endl;
         return 1;
     }
 

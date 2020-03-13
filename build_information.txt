@@ -1,13 +1,13 @@
-General configuration for OpenCV 4.1.1 =====================================
-  Version control:               4.1.1
+General configuration for OpenCV 4.2.0 =====================================
+  Version control:               4.2.0
 
   Extra modules:
-    Location (extra):            /home/pi/opencv-build/opencv_contrib-4.1.1/modules
+    Location (extra):            /home/pi/opencv-build/opencv_contrib-4.2.0/modules
     Version control (extra):     unknown
 
   Platform:
-    Timestamp:                   2019-08-13T18:22:37Z
-    Host:                        Linux 4.19.50-v7+ armv7l
+    Timestamp:                   2020-03-13T09:09:16Z
+    Host:                        Linux 4.19.97-v7+ armv7l
     CMake:                       3.13.4
     CMake generator:             Ninja
     CMake build tool:            /usr/bin/ninja
@@ -30,11 +30,11 @@ General configuration for OpenCV 4.1.1 =====================================
     Linker flags (Debug):        -Wl,--gc-sections  
     ccache:                      YES
     Precompiled headers:         NO
-    Extra dependencies:          dl m pthread rt
+    Extra dependencies:          atomic dl m pthread rt
     3rdparty dependencies:
 
   OpenCV modules:
-    To be built:                 aruco bgsegm bioinspired calib3d ccalib core datasets dnn dnn_objdetect dpm face features2d flann freetype fuzzy gapi hfs highgui img_hash imgcodecs imgproc line_descriptor ml objdetect optflow phase_unwrapping photo plot python2 python3 quality reg rgbd saliency shape stereo stitching structured_light superres surface_matching text tracking video videoio videostab world xfeatures2d ximgproc xobjdetect xphoto
+    To be built:                 aruco bgsegm bioinspired calib3d ccalib core datasets dnn dnn_objdetect dnn_superres dpm face features2d flann freetype fuzzy gapi hfs highgui img_hash imgcodecs imgproc line_descriptor ml objdetect optflow phase_unwrapping photo plot python2 python3 quality reg rgbd saliency shape stereo stitching structured_light superres surface_matching text tracking video videoio videostab world xfeatures2d ximgproc xobjdetect xphoto
     Disabled:                    -
     Disabled by dependency:      -
     Unavailable:                 cnn_3dobj cudaarithm cudabgsegm cudacodec cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping cudev cvv hdf java js matlab ovis sfm ts viz
@@ -53,7 +53,7 @@ General configuration for OpenCV 4.1.1 =====================================
     JPEG:                        /usr/lib/arm-linux-gnueabihf/libjpeg.so (ver 62)
     WEBP:                        build (ver encoder: 0x020e)
     PNG:                         /usr/lib/arm-linux-gnueabihf/libpng.so (ver 1.6.36)
-    TIFF:                        /usr/lib/arm-linux-gnueabihf/libtiff.so (ver 42 / 4.0.10)
+    TIFF:                        /usr/lib/arm-linux-gnueabihf/libtiff.so (ver 42 / 4.1.0)
     JPEG 2000:                   /usr/lib/arm-linux-gnueabihf/libjasper.so (ver 1.900.1)
     OpenEXR:                     build (ver 2.3.0)
     HDR:                         YES
@@ -83,7 +83,7 @@ General configuration for OpenCV 4.1.1 =====================================
     Protobuf:                    build (3.5.1)
 
   OpenCL:                        YES (no extra features)
-    Include path:                /home/pi/opencv-build/opencv-4.1.1/3rdparty/include/opencl/1.2
+    Include path:                /home/pi/opencv-build/opencv-4.2.0/3rdparty/include/opencl/1.2
     Link libraries:              Dynamic load
 
   Python 2:
@@ -108,3 +108,4 @@ General configuration for OpenCV 4.1.1 =====================================
 
   Install to:                    /usr/local
 -----------------------------------------------------------------
+
