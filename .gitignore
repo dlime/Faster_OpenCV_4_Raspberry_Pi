@@ -2,3 +2,4 @@ CMakeLists.txt.user
 .clang-format
 build/
 .idea/
+__pycache__
