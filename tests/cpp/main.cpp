@@ -10,7 +10,7 @@ namespace
 {
 const int CURRENT_OPENCV_BUILD_MAJOR{ 4 };
 const int CURRENT_OPENCV_BUILD_MINOR{ 2 };
-const int CURRENT_OPENCV_BUILD_REVISION = { 0 };
+const int CURRENT_OPENCV_BUILD_REVISION{ 0 };
 } // namespace
 
 bool
@@ -38,7 +38,7 @@ test_build_version( )
 bool
 test_multithreading_enabled( )
 {
-    if ( 1 < cv::getNumThreads( ) ) {
+    if ( cv::getNumThreads( ) < 1 ) {
         std::cout << "ERROR: Available threads should be more than 1" << std::endl;
         return false;
     }
