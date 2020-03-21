@@ -20,4 +20,4 @@ def test_multithreading_enabled():
 def test_neon_enabled():
     # Value taken from doc. OpenCV CPU labels don't work correctly in Python
     cv2.CPU_NEON = 100
-    assert not cv2.checkHardwareSupport(cv2.CPU_NEON)
+    assert cv2.checkHardwareSupport(cv2.CPU_NEON)
