@@ -11,7 +11,7 @@
 namespace
 {
 const int         CURRENT_OPENCV_BUILD_MAJOR{ 4 };
-const int         CURRENT_OPENCV_BUILD_MINOR{ 2 };
+const int         CURRENT_OPENCV_BUILD_MINOR{ 4 };
 const int         CURRENT_OPENCV_BUILD_REVISION = { 0 };
 const std::string IMAGE{ "tetris_blocks.png" };
 }

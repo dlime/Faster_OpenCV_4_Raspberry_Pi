@@ -6,7 +6,7 @@ Since I've already compiled this on my own Raspberry Pi I made it available on G
 Save countless of compile time by just installing these debs. Enjoy!
 
 ## What is this?
-* A pre-compiled **OpenCV 4.2.0** for **Raspberry Pi** optimized for deep learning / computer vision applications (**NEON**, **VFPV3**, **TBB** turned on).
+* A pre-compiled **OpenCV 4.4.0** for **Raspberry Pi** optimized for deep learning / computer vision applications (**NEON**, **VFPV3**, **TBB** turned on).
 * Bindings for **Python 2** and **Python 3** are also included.
 * For detailed build informations click [here](build_information.txt).
 * Created with OpenCV cpack targets.
